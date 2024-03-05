@@ -34,6 +34,14 @@ body {
   margin-bottom: 0;
   color: var(--heading-color);
 }
+h3 {
+  font-size: 44px;
+  font-weight: bold;
+  font-family: var(--default-font-family);
+}
+p {
+  font-family: var(--default-font-family);
+}
 .btn-new {
   background-color: var(--branding-color);
   color: white;
@@ -42,4 +50,49 @@ body {
   font-size: 18px;
   font-weight: 500;
   line-height: 27px;
+}
+.btn-new:hover{
+  color: var(--branding-color);
+  border: 1px solid var(--branding-color);
+}
+.btn-launch-app {
+  color: var(--branding-color);
+  border: 1px solid var(--branding-color);
+  border-radius: 4px;
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+}
+.btn-launch-app:hover {
+  background-color: var(--branding-color);
+  color: white;
+}
+img {
+  border-radius: 2px;
+  transition: all 150ms ease-in-out;
+}
+img:hover {
+  transform: scale(1.2);
+}
+.project-description {
+  padding: 80px 60px 20px;
+}
+@media (max-width: 900px){
+  .hero h1 {
+    font-size: 60px;
+    line-height: 1.2;
+    margin: 10px 0;
+  }
+  h3 {
+    font-size: 40px;
+  }
+  .hero {
+    padding: 80px 20px;
+  }
+  .project-description {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
 }
