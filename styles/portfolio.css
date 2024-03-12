@@ -20,12 +20,23 @@ body {
   margin-bottom: 0;
   color: var(--heading-color);
 }
-.hero h1 {
+h1 {
   font-family: var(--heading-font-family);
   font-weight: bold;
   font-size: 82px;
   line-height: 127.97px;
   margin-bottom: 0;
+}
+.about-section{
+   padding: 180px 30px;
+}
+.about-section-content {
+  margin: 30px;
+}
+.about{
+  font-size: 50px;
+  line-height: 1.3;
+  margin-bottom: 15px;
 }
 .hero p {
   font-weight: normal;
@@ -79,7 +90,7 @@ img:hover {
   padding: 80px 60px 20px;
 }
 @media (max-width: 900px){
-  .hero h1 {
+  h1 {
     font-size: 60px;
     line-height: 1.2;
     margin: 10px 0;
@@ -94,5 +105,9 @@ img:hover {
     padding: 0;
     margin: 0;
     text-align: center;
+  }
+  .about-section {
+    text-align: center;
+    padding: 0;
   }
 }
