@@ -7,15 +7,31 @@
 }
 body {
   font-family: var(--default-font-family);
+  display: block;
 }
+
 .hero {
   text-align: center;
   background-color: var(--secondary-color);
-  padding: 180px 30px;
+  height: 100vh;
+  box-sizing: border-box;
+  padding: 100px 20px;
+}
+
+.text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .hero h2 {
   font-weight: bold;
-  font-size: 32px;
+  font-size: 28px;
   line-height: 54px;
   margin-bottom: 0;
   color: var(--heading-color);
@@ -23,24 +39,39 @@ body {
 h1 {
   font-family: var(--heading-font-family);
   font-weight: bold;
-  font-size: 82px;
-  line-height: 127.97px;
+  font-size: 72px;
+  line-height: 80px;
   margin-bottom: 0;
 }
-.about-section{
-   padding: 180px 30px;
+.text-projects {
+  text-align: center;
+  color: var(--branding-color);
+  font-weight: bold;
 }
-.about-section-content {
-  margin: 30px;
+.content-container {
+  text-align: center;
+  height: 100vh;
+  padding: 100px 20px;
 }
-.about{
+.intro {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.content {
+ margin: 10px;
+}
+
+.about {
   font-size: 50px;
   line-height: 1.3;
   margin-bottom: 15px;
 }
 .hero p {
   font-weight: normal;
-  font-size: 22px;
+  font-size: 20px;
   line-height: 36px;
   margin-bottom: 0;
   color: var(--heading-color);
@@ -62,7 +93,7 @@ p {
   font-weight: 500;
   line-height: 27px;
 }
-.btn-new:hover{
+.btn-new:hover {
   color: var(--branding-color);
   border: 1px solid var(--branding-color);
 }
@@ -84,30 +115,21 @@ img {
   transition: all 150ms ease-in-out;
 }
 img:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 .project-description {
   padding: 80px 60px 20px;
 }
-@media (max-width: 900px){
-  h1 {
-    font-size: 60px;
-    line-height: 1.2;
-    margin: 10px 0;
-  }
-  h3 {
-    font-size: 40px;
-  }
-  .hero {
-    padding: 80px 20px;
-  }
+@media (max-width: 960px){
   .project-description {
     padding: 0;
-    margin: 0;
     text-align: center;
   }
-  .about-section {
-    text-align: center;
-    padding: 0;
+  .projects {
+    height: 100vh;
+  }
+  h3 {
+    font-size: 35px;
+    color: var(--heading-color);
   }
 }
