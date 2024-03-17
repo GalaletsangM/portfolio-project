@@ -64,11 +64,12 @@ section:nth-of-type(5) form{
 @media (max-width: 390px){
     #about{
         padding: 5px;
+        padding-top: 40px;
     }
     .summary-text{
         display: none;
     }
     .profile-picture{
-        width: 150px;
+        width: 200px;
     }
 }
