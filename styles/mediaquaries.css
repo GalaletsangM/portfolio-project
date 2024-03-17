@@ -61,3 +61,11 @@ form{
 section:nth-of-type(5) form{
     margin: 40px auto 0 auto;
 }
+@media (max-width: 390px){
+    #about{
+        padding: 0;
+    }
+    .sumarry{
+        display: none;
+    }
+}
