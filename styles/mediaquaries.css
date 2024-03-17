@@ -1,0 +1,63 @@
+@media (max-width: 960px) {
+  #desktop-nav {
+    display: none;
+  }
+  #hamburger-nav {
+    display: flex;
+  }
+   {
+    font-size: 35px;
+    color: var(--heading-color);
+  }
+  .content-container {
+    padding: 0;
+  }
+  .content {
+    margin: 0;
+  }
+  .content .p {
+    margin: 5px;
+  }
+  .fa-brands {
+    margin: 0;
+    width: fit-content;
+  }
+  .project-h1 {
+    font-size: 45px;
+    line-height: 1.2;
+  }
+  #projects{
+    margin: 10px;
+  }
+ 
+}
+@media (min-width: 768px) {
+  .images--is-desktop {
+    display: block;
+  }
+}
+@media (max-width: 375px){
+     #about {
+    padding-top: 5px;
+  }
+  .profile-picture{
+    width: 200px;
+  }
+}
+
+form{
+    display: block;
+}
+@media screen and (min-width: 960px) {
+    .animated.pop-in{
+        animation:1s both;
+    }
+}
+@media screen and (min-width: 600px) {
+    section:nth-of-type(5) from{
+        min-width: 500px;
+    }  
+}
+section:nth-of-type(5) form{
+    margin: 40px auto 0 auto;
+}
