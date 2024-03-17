@@ -23,3 +23,4 @@ function sendEmail() {
       "<br> Message: " + document.getElementById("message").value,
   }).then((message) => alert("Message sent succesfully!"));
 }
+
