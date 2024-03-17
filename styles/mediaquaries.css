@@ -68,4 +68,7 @@ section:nth-of-type(5) form{
     .sumarry{
         display: none;
     }
+    .profile-picture{
+        width: 100px;
+    }
 }
